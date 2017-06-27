@@ -28,7 +28,7 @@ $(function() {
 	    	var $column = $('<div>').addClass('column');
 				$columnTitle = $('<h2>').addClass('column-title').text(self.name);
 				$columnCardList = $('<ul>').addClass('column-card-list');
-				$columnDelete = $('<button>').addClass('btn-delete').text('x');
+				$columnDelete = $('<button>').addClass('btn-delete1').text('x');
 				$columnAddCard = $('<button>').addClass('add-card').text('Add a card');
 
 			$columnDelete.click(function() {
@@ -57,7 +57,7 @@ $(function() {
 		function createCard() {
 			var $card = $('<li>').addClass('card');
 				$cardDescription = $('<p>').addClass('card-description').text(self.description);
-				$cardDelete = $('<button>').addClass('btn-delete').text('x');
+				$cardDelete = $('<button>').addClass('btn-delete2').text('x');
 
 			$cardDelete.click(function(){
 			        self.removeCard();
@@ -85,11 +85,14 @@ $(function() {
 	}
 
 	function initSortable() {
-		$('.column-card-list').sortable({
-			connectWith: '.column-card-list',
+		$('.column').sortable({
+			connectWith: '.column',
 			placeholder: 'card-placeholder'
 		}).disableSelection();
+		$('column-title','btn-delete1', 'add-card')
+		  .disableSelection();
 	}
+
 	$('.create-column')
 		.click(function(){
 			var name = prompt('Enter a column name');

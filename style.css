@@ -1,7 +1,8 @@
 .card-placeholder {
 	background: lightgrey;
-	width:50px;
+	width: 80px;
 	height: 50px;
+	margin-left: 40px;
 }
 .board {
 	padding: 20px;
@@ -9,7 +10,20 @@
 .column {
 	float: left;
 	padding-right: 100px;
+	border: 1px solid black;
+	margin-top: 30px;
+	background: rgb(52, 152, 219);
+}
+.column-title {
+	text-align: center;
+}
+.btn-delete1 {
+	margin: 0px 0px 40px 40px;
 }
 ul {
 	list-style: none;
+}
+li {
+	border: 1px solid black;
+	background: rgb(39, 174, 96);
 }
