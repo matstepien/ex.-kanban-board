@@ -16,11 +16,15 @@
 }
 .column-title {
 	text-align: center;
-	display: block;
-	position: relative;
 }
 .btn-delete1 {
 	margin: 0px 0px 40px 40px;
+}
+.btn-delete2 {
+	float: right;
+	background: rgb(39, 174, 96);
+	border: none;
+	cursor: pointer;
 }
 ul {
 	list-style: none;
@@ -31,5 +35,5 @@ li {
 	margin: 10px;
 }
 ul.ui-sortable {
-	min-height: 50px;
+	min-height: 100px;
 }
