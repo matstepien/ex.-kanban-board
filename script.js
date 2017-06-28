@@ -85,12 +85,10 @@ $(function() {
 	}
 
 	function initSortable() {
-		$('.column').sortable({
-			connectWith: '.column',
+		$('.column-card-list').sortable({
+			connectWith: '.column-card-list',
 			placeholder: 'card-placeholder'
 		}).disableSelection();
-		$('column-title','btn-delete1', 'add-card')
-		  .disableSelection();
 	}
 
 	$('.create-column')
